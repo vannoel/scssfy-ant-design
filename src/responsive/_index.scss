@@ -48,22 +48,22 @@
   }
 }
 
-@include makeGrid('');
+@include makeResponsive('');
 @include media-breakpoint-up-xs {
-  @include makeGrid('-xs');
+  @include makeResponsive('-xs');
 }
 @include media-breakpoint-up-sm {
-  @include makeGrid('-sm');
+  @include makeResponsive('-sm');
 }
 @include media-breakpoint-up-md {
-  @include makeGrid('-md');
+  @include makeResponsive('-md');
 }
 @include media-breakpoint-up-lg {
-  @include makeGrid('-lg');
+  @include makeResponsive('-lg');
 }
 @include media-breakpoint-up-xl {
-  @include makeGrid('-xl');
+  @include makeResponsive('-xl');
 }
 @include media-breakpoint-up-xxl {
-  @include makeGrid('-xxl');
+  @include makeResponsive('-xxl');
 }

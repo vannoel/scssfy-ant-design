@@ -20,13 +20,13 @@ const buildList = [
     minimize: true,
   },
   {
-    fileName: 'rwd.css',
-    source: 'rwd.scss',
+    fileName: 'responsive.css',
+    source: 'responsive.scss',
     minimize: false,
   },
   {
-    fileName: 'rwd.min.css',
-    source: 'rwd.scss',
+    fileName: 'responsive.min.css',
+    source: 'responsive.scss',
     minimize: true,
   },
 ];

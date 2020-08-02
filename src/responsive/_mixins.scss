@@ -21,7 +21,7 @@
   }
 }
 
-@mixin makeGrid ($class) {
+@mixin makeResponsive ($class) {
   .hidden#{$class} {
     display: none;
   }
