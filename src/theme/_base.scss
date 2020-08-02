@@ -1,0 +1,141 @@
+// ColorList
+$colorList-primary: $colorList-blue;
+
+// Color
+$color-primary: nth($colorList-primary, 6);
+$color-info: nth($colorList-primary, 6);
+$color-success: nth($colorList-green, 6);
+$color-processing: nth($colorList-blue, 6);
+$color-error: nth($colorList-red, 6);
+$color-highlight: nth($colorList-red, 6);
+$color-warning: nth($colorList-gold, 6);
+
+$color-normal: nth($colorList-blue, 5);
+
+// Media-boundary
+$breakpoint-xxl: 1600px;
+$breakpoint-xl: 1200px;
+$breakpoint-md: 768px;
+$breakpoint-sm: 576px;
+$breakpoint-lg: 992px;
+$breakpoint-xs: 480px;
+
+// Grid
+$grid-columns: 24;
+
+// Default
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$code-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+$font-size: 14px;
+$font-line-height: 22px;
+$font-color: rgba($color-black, $alpha: 0.65);
+$font-placeholder-color: nth($colorList-blue, 6);
+$font-color-inverse: $color-white;
+$font-selection-background-color: $color-primary;
+$font-variant: tabular-nums;
+$font-feature-settings: 'tnum';
+$body-background-color: $color-white;
+
+// Font
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+
+$font-size-sm: 12px;
+$font-size-md: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 30px;
+$font-size-4xl: 38px;
+$font-size-5xl: 46px;
+$font-size-6xl: 56px;
+$font-size-7xl: 68px;
+
+$line-height-sm: 20px;
+$line-height-md: 22px;
+$line-height-lg: 24px;
+$line-height-xl: 28px;
+$line-height-2xl: 32px;
+$line-height-3xl: 38px;
+$line-height-4xl: 46px;
+$line-height-5xl: 54px;
+$line-height-6xl: 64px;
+$line-height-7xl: 76px;
+
+// Head
+$heading-color: rgba($color-black, 0.85);
+
+// Link
+$link-color: $color-primary;
+$link-hover-color: nth($colorList-primary, 5);
+$link-active-color: nth($colorList-primary, 7);
+$link-decoration: none;
+$link-hover-decoration: none;
+$link-focus-decoration: none;
+$link-focus-outline: 0;
+
+// Background
+$background-color: nth($colorList-blue, 3);
+$background-light-color: nth($colorList-blue, 2);
+
+// Z-index
+// TODO
+
+// Animation
+$animation-duration-slow: 0.3s;
+$animation-duration-base: 0.2s;
+$animation-duration-fast: 0.1s;
+
+// Animation-function
+$ease-base-out: cubic-bezier(0.7, 0.3, 0.1, 1);
+$ease-base-in: cubic-bezier(0.9, 0, 0.3, 0.7);
+$ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease-out-back: cubic-bezier(0.12, 0.4, 0.29, 1.46);
+$ease-in-back: cubic-bezier(0.71, -0.46, 0.88, 0.6);
+$ease-in-out-back: cubic-bezier(0.71, -0.46, 0.29, 1.46);
+$ease-out-circ: cubic-bezier(0.08, 0.82, 0.17, 1);
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+$ease-in-out-circ: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+
+// Pading
+$padding-lg: 24px;
+$padding-md: 16px;
+$padding-sm: 12px;
+$padding-xs: 8px;
+$padding-xss: 4px;
+
+// Margin
+$margin-lg: 24px;
+$margin-md: 16px;
+$margin-sm: 12px;
+$margin-xs: 8px;
+$margin-xss: 4px;
+
+// Height
+$height-lg: 40px;
+$height-md: 32px;
+$height-sm: 24px;
+
+// Border
+$border-color: nth($colorList-blue, 5);
+$border-color-split: nth($colorList-blue, 4);
+$border-width: 1px;
+$border-style: solid;
+
+// Border radius
+$border-radius-full: 100%;
+$border-radius-half: 50%;
+$border-radius-xl: 8px; 
+$border-radius-lg: 6px;
+$border-radius-md: 4px;
+$border-radius-sm: 2px;
+
+// Disabled states
+$disabled-color: rgba($color-black, 0.25);
+$disabled-color-dark: rgba($color-black, 0.35);;
+$disabled-background-color: $background-color;

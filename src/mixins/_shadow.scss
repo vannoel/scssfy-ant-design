@@ -1,0 +1,42 @@
+$shadow-1-color: rgba($color-black, 0.16), rgba($color-black, 0.12), rgba($color-black, 0.09);
+$shadow-2-color: rgba($color-black, 0.12), rgba($color-black, 0.08), rgba($color-black, 0.05);
+$shadow-3-color: rgba($color-black, 0.08), rgba($color-black, 0.05), rgba($color-black, 0.03);
+
+@mixin shadow-1-up {
+  box-shadow: 0 -1px 2px -2px nth($shadow-1-primary, 1), 0 -3px 6px 0 nth($shadow-1-primary, 2), 0 -5px 12px 4px nth($shadow-1-primary, 3);
+}
+@mixin shadow-1-right {
+  box-shadow: 1px 0 2px -2px nth($shadow-1-primary, 1), 3px 0 6px 0 nth($shadow-1-primary, 2), 5px 0 12px 4px nth($shadow-1-primary, 3);
+}
+@mixin shadow-1-down {
+  box-shadow: 0 1px 2px -2px nth($shadow-1-primary, 1), 0 3px 6px 0 nth($shadow-1-primary, 2), 0 5px 12px 4px nth($shadow-1-primary, 3);
+}
+@mixin shadow-1-left {
+  box-shadow: -1px 0 2px -2px nth($shadow-1-primary, 1), -3px 0 6px 0 nth($shadow-1-primary, 2), -5px 0 12px 4px nth($shadow-1-primary, 3);
+}
+
+@mixin shadow-2-up {
+  box-shadow: 0 -3px 6px -4px nth($shadow-2-primary, 1), 0 -6px 16px 0 nth($shadow-2-primary, 2), 0 -9px 28px 8px nth($shadow-2-primary, 3);
+}
+@mixin shadow-2-right {
+  box-shadow: 3px 0 6px -4px nth($shadow-2-primary, 1), 6px 0 16px 0 nth($shadow-2-primary, 2), 9px 0 28px 8px nth($shadow-2-primary, 3);
+}
+@mixin shadow-2-down {
+  box-shadow: 0 3px 6px -4px nth($shadow-2-primary, 1), 0 6px 16px 0 nth($shadow-2-primary, 2), 0 9px 28px 8px nth($shadow-2-primary, 3);
+}
+@mixin shadow-2-left {
+  box-shadow: -3px 0 6px -4px nth($shadow-2-primary, 1), -6px 0 16px 0 nth($shadow-2-primary, 2), -9px 0 28px 8px nth($shadow-2-primary, 3);
+}
+
+@mixin shadow-3-up {
+  box-shadow: 0 -6px 16px -8px nth($shadow-3-primary, 1), 0 -9px 28px 0 nth($shadow-3-primary, 2), 0 -12px 48px 16px nth($shadow-3-primary, 3);
+}
+@mixin shadow-3-right {
+  box-shadow: 6px 0 16px -8px nth($shadow-3-primary, 1), 9px 0 28px 0 nth($shadow-3-primary, 2), 12px 0 48px 16px nth($shadow-3-primary, 3);
+}
+@mixin shadow-3-down {
+  box-shadow: 0 6px 16px -8px nth($shadow-3-primary, 1), 0 9px 28px 0 nth($shadow-3-primary, 2), 0 12px 48px 16px nth($shadow-3-primary, 3);
+}
+@mixin shadow-3-left {
+  box-shadow: -6px 0 16px -8px nth($shadow-3-primary, 1), -9px 0 28px 0 nth($shadow-3-primary, 2), -12px 0 48px 16px nth($shadow-3-primary, 3);
+}

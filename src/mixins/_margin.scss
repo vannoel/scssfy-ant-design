@@ -1,0 +1,23 @@
+@mixin margin($value) {
+  margin: $value;
+}
+@mixin margin-y($value) {
+  margin-bottom: $value;
+  margin-top: $value;
+}
+@mixin margin-x($value) {
+  margin-left: $value;
+  margin-right: $value;
+}
+@mixin margin-top($value) {
+  margin-top: $value;
+}
+@mixin margin-right($value) {
+  margin-right: $value;
+}
+@mixin margin-bottom($value) {
+  margin-bottom: $value;
+}
+@mixin margin-left($value) {
+  margin-left: $value;
+}

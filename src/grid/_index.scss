@@ -1,0 +1,69 @@
+@import './mixins';
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+
+  &::before,
+  &::after {
+    display: flex;
+  }
+
+  &.row-start {
+    justify-content: flex-start;
+  }
+  
+  &.row-center {
+    justify-content: center;
+  }
+  
+  &.row-end {
+    justify-content: flex-end;
+  }
+  
+  &.row-space-between {
+    justify-content: space-between;
+  }
+  
+  &.row-space-around {
+    justify-content: space-around;
+  }
+  
+  &.row-top {
+    align-items: flex-start;
+  }
+  
+  &.row-middle {
+    align-items: center;
+  }
+  
+  &.row-bottom {
+    align-items: flex-end;
+  }
+
+  .row_col {
+    max-width: 100%;
+    min-height: 1px;
+    position: relative;
+  }
+}
+
+@include makeGrid('');
+@include media-breakpoint-up-xs {
+  @include makeGrid('-xs');
+}
+@include media-breakpoint-up-sm {
+  @include makeGrid('-sm');
+}
+@include media-breakpoint-up-md {
+  @include makeGrid('-md');
+}
+@include media-breakpoint-up-lg {
+  @include makeGrid('-lg');
+}
+@include media-breakpoint-up-xl {
+  @include makeGrid('-xl');
+}
+@include media-breakpoint-up-xxl {
+  @include makeGrid('-xxl');
+}

@@ -1,0 +1,113 @@
+$screen-xxl: ('inf': $breakpoint-xxl);
+$screen-xl: ('inf': $breakpoint-xl, 'sup': $breakpoint-xxl - 1px,);
+$screen-lg: ('inf': $breakpoint-lg, 'sup': $breakpoint-xl - 1px,);
+$screen-md: ('inf': $breakpoint-md, 'sup': $breakpoint-lg - 1px,);
+$screen-sm: ('inf': $breakpoint-sm, 'sup': $breakpoint-md - 1px,);
+$screen-xs: ('inf': $breakpoint-xs, 'sup': $breakpoint-sm - 1px,);
+$screen-xxs: ('sup': $breakpoint-xs - 1px,);
+
+// up
+@mixin media-breakpoint-up($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin media-breakpoint-up-xxl {
+  @include media-breakpoint-up(map-get($screen-xxl, 'inf')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-up-xl {
+  @include media-breakpoint-up(map-get($screen-xl, 'inf')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-up-lg {
+  @include media-breakpoint-up(map-get($screen-lg, 'inf')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-up-md {
+  @include media-breakpoint-up(map-get($screen-md, 'inf')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-up-sm {
+  @include media-breakpoint-up(map-get($screen-sm, 'inf')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-up-xs {
+  @include media-breakpoint-up(map-get($screen-xs, 'inf')) {
+    @content;
+  }
+}
+
+// down 
+@mixin media-breakpoint-down($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin media-breakpoint-down-xl {
+  @include media-breakpoint-down(map-get($screen-xl, 'sup')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-down-lg {
+  @include media-breakpoint-down(map-get($screen-lg, 'sup')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-down-md {
+  @include media-breakpoint-down(map-get($screen-md, 'sup')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-down-sm {
+  @include media-breakpoint-down(map-get($screen-sm, 'sup')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-down-xs {
+  @include media-breakpoint-down(map-get($screen-xs, 'sup')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-down-xxs {
+  @include media-breakpoint-down(map-get($screen-xxs, 'sup')) {
+    @content;
+  }
+}
+
+// between 
+@mixin media-breakpoint-between($inf, $sup) {
+  @media (min-width: $inf) and (max-width: $sup) {
+    @content;
+  }
+}
+@mixin media-breakpoint-between-xl {
+  @include media-breakpoint-between (map-get($screen-xl, 'inf'), map-get($screen-xl, 'sup')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-between-lg {
+  @include media-breakpoint-between (map-get($screen-lg, 'inf'), map-get($screen-lg, 'sup')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-between-md {
+  @include media-breakpoint-between (map-get($screen-md, 'inf'), map-get($screen-md, 'sup')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-between-sm {
+  @include media-breakpoint-between (map-get($screen-sm, 'inf'), map-get($screen-sm, 'sup')) {
+    @content;
+  }
+}
+@mixin media-breakpoint-between-xs {
+  @include media-breakpoint-between (map-get($screen-xs, 'inf'), map-get($screen-xs, 'sup')) {
+    @content;
+  }
+}

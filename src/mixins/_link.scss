@@ -1,0 +1,16 @@
+@mixin link {
+  color: $link-color;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:focus,
+  &:hover {
+    color: $link-hover-color;
+  }
+
+  &:active {
+    color: $link-active-color;
+  }
+}

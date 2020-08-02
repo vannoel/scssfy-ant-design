@@ -1,0 +1,32 @@
+@mixin makeGrid-recursive ($index, $class) {
+  @if ($index > 0)
+  {
+    .grid-row .row_col{
+      &.col#{$class}-#{$index} {
+        display: block;
+        flex: 0 0 percentage(($index / $grid-columns));
+        max-width: percentage(($index / $grid-columns));
+      }
+      &.col#{$class}-offset-#{$index} {
+        margin-left: percentage(($index / $grid-columns));
+      }
+    }
+    @include makeGrid-recursive($index - 1, $class);
+  }
+}
+
+@mixin makeFontAlign($align,$class) {
+  .font-#{$align}#{$class} {
+    text-align: left;
+  }
+}
+
+@mixin makeGrid ($class) {
+  .hidden#{$class} {
+    display: none;
+  }
+  @include makeFontAlign('left', $class);
+  @include makeFontAlign('center', $class);
+  @include makeFontAlign('right', $class);
+  @include makeGrid-recursive($grid-columns, $class);
+}

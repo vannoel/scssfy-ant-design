@@ -1,0 +1,44 @@
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
+@mixin font-weight-normal {
+  @include font-weight($font-weight-normal)
+}
+@mixin font-weight-bold {
+  @include font-weight($font-weight-bold)
+}
+
+@mixin font-size($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+@mixin font-size-7xl {
+  @include font-size($font-size-7xl, $line-height-7xl)
+}
+@mixin font-size-6xl {
+  @include font-size($font-size-6xl, $line-height-6xl)
+}
+@mixin font-size-5xl {
+  @include font-size($font-size-5xl, $line-height-5xl)
+}
+@mixin font-size-4xl {
+  @include font-size($font-size-4xl, $line-height-4xl)
+}
+@mixin font-size-3xl {
+  @include font-size($font-size-3xl, $line-height-3xl)
+}
+@mixin font-size-2xl {
+  @include font-size($font-size-2xl, $line-height-2xl)
+}
+@mixin font-size-xl {
+  @include font-size($font-size-xl, $line-height-xl)
+}
+@mixin font-size-lg {
+  @include font-size($font-size-lg, $line-height-lg)
+}
+@mixin font-size-md {
+  @include font-size($font-size-md, $line-height-md)
+}
+@mixin font-size-sm {
+  @include font-size($font-size-sm, $line-height-sm)
+}
