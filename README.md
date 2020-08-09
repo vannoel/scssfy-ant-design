@@ -48,7 +48,7 @@ $color: nth($colorList, $index);
 
 About definition of theme, to utilize the concept of `@mixins` from SCSS. I only extract some definitions of `$variables` which are core. And put some meaning of theme into `@mxins`.
 
-- color: 
+- color:
 
   Definitions of primary color and some specific color.
 
@@ -80,7 +80,7 @@ About definition of theme, to utilize the concept of `@mixins` from SCSS. I only
 
 As mentioned before. I transform the way to design the theme from `LESS` style to `SCSS` style. So I add some `@mixins` to help you developing the components by your own but still keep the theme as similar as Ant-Design.
 
-You may notice the $theme can be separated into definition-part and dimension-part. For mixins, the definition-part is used as default parameter, and the dimension-part is used as parameter.
+You may notice the \$theme can be separated into definition-part and dimension-part. For mixins, the definition-part is used as default parameter, and the dimension-part is used as parameter.
 
 #### Definition for default
 
@@ -97,16 +97,16 @@ You may notice the $theme can be separated into definition-part and dimension-pa
 #### Dimensions for parameter
 
 ```scss
-@include sample($size-md)
+@include sample($size-md);
 ```
 
 ### Common Style for HTML's elements
 
-In this repositiory. The CSS files will be built after installation. And it will produce `index.css` and `responsive.css`. The `index.css` contains the common style for general defitions. It styles `HTML elements` in Ant-Design way basically. 
+In this repositiory. The CSS files will be built after installation. And it will produce `index.css` and `responsive.css`. The `index.css` contains the common style for general defitions. It styles `HTML elements` in Ant-Design way basically.
 
 Please let me know if you found some style I missed.
 
-### Responsive Style with breakpoint for Responsive Web Design 
+### Responsive Style with breakpoint for Responsive Web Design
 
 The other file produced is `responsive.css`. Basically it contians the grid system and the style for layout which works with breakpoint.
 
