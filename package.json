@@ -29,7 +29,7 @@
   "homepage": "https://github.com/vannoel/scssfy-ant-design#readme",
   "dependencies": {
     "autoprefixer": "^9.8.6",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "rollup": "^2.23.0",
     "rollup-plugin-postcss": "^3.1.3"
   },
